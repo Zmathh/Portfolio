@@ -26,6 +26,14 @@ html{
     background: #555;
 }
 
+.text, .box p{
+    color:white;
+}
+
+.romain{
+    display:flex;
+    flex-direction: column;
+}
 /* all similar content styling codes */
 section{
     padding: 100px 0;
@@ -94,6 +102,18 @@ section .title::after{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.navbar .logomathis a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.navbar .logomathis a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logomathis a span{
+    color: #fff;
 }
 .navbar .logo a{
     color: #fff;
@@ -257,7 +277,13 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
+/* SAE section styling */
+
+
+
+.services .descSAE{
+    font-size: 12px;
+}
 .services, .teams{
     color:#fff;
     background: #111;
@@ -297,6 +323,18 @@ section .title::after{
 .services .serv-content .card:hover i{
     color: #fff;
 }
+
+
+.services .serv-content .card .text{
+    color:crimson;
+}
+.services .serv-content .card :hover{
+    color:white;
+}
+
+
+
+
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
