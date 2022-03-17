@@ -69,10 +69,11 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 205px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
+    
 }
 section .title::after{
     position: absolute;
@@ -80,9 +81,11 @@ section .title::after{
     left: 50%;
     font-size: 20px;
     color: crimson;
-    padding: 0 5px;
+    /*padding: 0 5px;*/
     background: #fff;
     transform: translateX(-50%);
+    border: solid 1px #a9a9a9;
+    
 }
 
 /* navbar styling */
@@ -344,7 +347,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "ce que je sais faire";
+    content: "Ce que je sais faire";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
