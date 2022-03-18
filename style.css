@@ -238,7 +238,8 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "Qui suis-je ?";
+    background: #fff
+    /*content: "Qui suis-je ?";*/
 }
 .about .about-content .left{
     width: 45%;
@@ -298,7 +299,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "Projets SAE";
+    /*content: "Projets SAE";*/
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -347,7 +348,8 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "Ce que je sais faire";
+    background: #fff;
+    /*content: "";*/
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -421,7 +423,8 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "Mes projets personnel";
+    background: #111;
+    /*content: "";*/
 }
 .teams .carousel .card{
     background: #222;
@@ -484,7 +487,8 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "Let's Get in Touch!";
+    background: #fff;
+    /*content: "";*/
     font-style: italic;
 }
 .contact .contact-content .column{

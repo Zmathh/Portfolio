@@ -48,6 +48,20 @@ $(document).ready(function(){
         loop: true
     });
 
+    var typed = new Typed(".typing-3", {
+        strings: ["mathis", "", "", "moi" ],
+        typeSpeed: 140,
+        backSpeed: 160,
+        loop: false
+    });
+
+    var typed = new Typed(".typing-4", {
+        strings: ["Contactez moi","Contactez moi","Contactez moi","","Lets get in touch" ],
+        typeSpeed: 80,
+        backSpeed: 140,
+        loop: false
+    });
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
