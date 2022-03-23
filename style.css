@@ -47,7 +47,7 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.services .sae-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -301,7 +301,7 @@ section .title::after{
     background: #111;
     /*content: "Projets SAE";*/
 }
-.services .serv-content .card{
+.services .sae-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -310,36 +310,32 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.services .sae-content .card:hover{
     background: crimson;
 }
-.services .serv-content .card .box{
+.services .sae-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.services .sae-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.services .sae-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.services .sae-content .card:hover i{
     color: #fff;
 }
-
-
-.services .serv-content .card .text{
+.services .sae-content .card .text{
     color:crimson;
+    transition: color 0.3s ease;
 }
-.services .serv-content .card :hover{
+.services .sae-content .card:hover .text{
     color:white;
+    transition: color 0.3s ease;
 }
-
-
-
-
-.services .serv-content .card .text{
+.services .sae-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -665,7 +661,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .services .sae-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -689,7 +685,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .services .sae-content .card{
         width: 100%;
     }
 }
