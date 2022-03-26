@@ -63,6 +63,28 @@ $(document).ready(function(){
     });
 
     // owl carousel script
+    $('.saecontent').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            700:{
+                items: 2,
+                nav: false
+            },
+            1100:{
+                items: 3,
+                nav: false
+            },
+        }
+});
+
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
@@ -83,5 +105,8 @@ $(document).ready(function(){
                 nav: false
             }
         }
-    });
 });
+
+
+});
+

@@ -47,7 +47,7 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .sae-content,
+.services .saecontent,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -301,45 +301,49 @@ section .title::after{
     background: #111;
     /*content: "Projets SAE";*/
 }
-.services .sae-content .card{
-    width: calc(33% - 20px);
+.services .saecontent .card{
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
+    overflow: hidden;
     transition: all 0.3s ease;
 }
-.services .sae-content .card:hover{
+.services .saecontent .card:hover{
     background: crimson;
 }
-.services .sae-content .card .box{
+.services .saecontent .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s ease;
 }
-.services .sae-content .card:hover .box{
+.services .saecontent .card:hover .box{
     transform: scale(1.05);
 }
-.services .sae-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.services .sae-content .card:hover i{
-    color: #fff;
-}
-.services .sae-content .card .text{
+.services .saecontent .card .text{
     color:crimson;
     transition: color 0.3s ease;
-}
-.services .sae-content .card:hover .text{
-    color:white;
-    transition: color 0.3s ease;
-}
-.services .sae-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.services .saecontent .card:hover .text{
+    color:white;
+    transition: color 0.3s ease;
+}
+.services .saecontent .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .saecontent .card:hover i{
+    color: #fff;
+}
+
+
 
 /* skills section styling */
 
@@ -394,7 +398,6 @@ section .title::after{
     position: relative;
 }
 .skills .skills-content .right .line::before{
-    content: "";
     position: absolute;
     height: 100%;
     left: 0;
@@ -403,18 +406,23 @@ section .title::after{
 }
 .skills-content .right .html::before{
     width: 90%;
+    content: ""
 }
 .skills-content .right .css::before{
     width: 60%;
+    content: "..."
 }
 .skills-content .right .js::before{
     width: 80%;
+    content: ""
 }
 .skills-content .right .php::before{
     width: 50%;
+    content: "..."
 }
 .skills-content .right .mysql::before{
     width: 70%;
+    content: ""
 }
 
 /* teams section styling */
@@ -459,6 +467,9 @@ section .title::after{
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
+
+    /* //      carousel */
+    
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -661,7 +672,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .sae-content .card{
+    .services .saecontent .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -685,7 +696,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .sae-content .card{
+    .services .saecontent .card{
         width: 100%;
     }
 }
