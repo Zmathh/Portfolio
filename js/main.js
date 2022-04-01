@@ -26,7 +26,26 @@ $(document).ready(function(){
         }else{
         console.log(".about .title  animation error");
         }
-
+        if(this.scrollY > 900){
+            $('.ProjetSAE .title').addClass("animate__animated animate__fadeInLeft");
+        }else{
+        console.log(".about .title  animation error");
+        }
+        if(this.scrollY > 1500){
+            $('.skills .title').addClass("animate__animated animate__fadeInLeft");
+        }else{
+        console.log(".about .title  animation error");
+        }
+        if(this.scrollY > 1900){
+            $('.projetsplus .title').addClass("animate__animated animate__fadeInLeft");
+        }else{
+        console.log(".about .title  animation error");
+        }
+        if(this.scrollY > 2500){
+            $('.contact .title').addClass("animate__animated animate__fadeInLeft");
+        }else{
+        console.log(".about .title  animation error");
+        }
 
 
 

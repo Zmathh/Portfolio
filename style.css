@@ -48,11 +48,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .ProjetSAE, .skills, .projetsplus, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .saecontent,
+.ProjetSAE .saecontent,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -161,20 +161,26 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
-.menu-btn .delaycent{
-    --animate-delay: 100ms;
+.delay-1 {
+    animation-delay: 250ms;
 }
-.menu-btn .delaydeuxcent{
-    --animate-delay: 200ms;
+.delayHome{
+    animation-delay: 350ms;
 }
-.menu-btn .delaytroiscent{
-    --animate-delay: 300ms;
+.delayAbout{
+    animation-delay: 450ms;
 }
-.menu-btn .delayquatrecent{
-    --animate-delay: 400ms;
+.delayProjetSAE{
+    animation-delay: 550ms;
 }
-.menu-btn .delaycinqcent{
-    --animate-delay: 2s;
+.delaySkills{
+    animation-delay: 650ms;
+}
+.delayProjetPlus{
+    animation-delay: 750ms;
+}
+.delayContact{
+    animation-delay: 850ms;
 }
 
 .scroll-up-btn{
@@ -333,23 +339,23 @@ section .title::after{
 
 
 
-.services .descSAE{
+.ProjetSAE .descSAE{
     font-size: 12px;
 }
-.services, .teams{
+.ProjetSAE, .projetsplus{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.ProjetSAE .title::before,
+.projetsplus .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.ProjetSAE .title::after,
+.projetsplus .title::after{
     background: #111;
     /*content: "Projets SAE";*/
 }
-.services .saecontent .card{
+.ProjetSAE .saecontent .card{
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -358,36 +364,36 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.services .saecontent .card:hover{
+.ProjetSAE .saecontent .card:hover{
     background: crimson;
 }
-.services .saecontent .card .box{
+.ProjetSAE .saecontent .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.services .saecontent .card:hover .box{
+.ProjetSAE .saecontent .card:hover .box{
     transform: scale(1.05);
 }
-.services .saecontent .card .text{
+.ProjetSAE .saecontent .card .text{
     color:crimson;
     transition: color 0.3s ease;
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.services .saecontent .card:hover .text{
+.ProjetSAE .saecontent .card:hover .text{
     color:white;
     transition: color 0.3s ease;
 }
-.services .saecontent .card i{
+.ProjetSAE .saecontent .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .saecontent .card:hover i{
+.ProjetSAE .saecontent .card:hover i{
     color: #fff;
 }
 
@@ -473,12 +479,12 @@ section .title::after{
     content: ""
 }
 
-/* teams section styling */
-.teams .title::after{
+/* projetsplus section styling */
+.projetsplus .title::after{
     background: #111;
     /*content: "";*/
 }
-.teams .carousel .card{
+.projetsplus .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -486,25 +492,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.projetsplus .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.projetsplus .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.projetsplus .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.projetsplus .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.projetsplus .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -512,7 +518,7 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.projetsplus .carousel .card:hover img{
     border-color: #fff;
 }
 
@@ -720,7 +726,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .saecontent .card{
+    .ProjetSAE .saecontent .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -744,7 +750,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .saecontent .card{
+    .ProjetSAE .saecontent .card{
         width: 100%;
     }
 }
