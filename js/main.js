@@ -13,6 +13,24 @@ $(document).ready(function(){
         }else{
             $('.scroll-up-btn').removeClass("show");
         }
+        // scroll-up button show/hide script
+        if(this.scrollY > 500){
+            $('.change-color-btn').addClass("show");
+        }else{
+            $('.change-color-btn').removeClass("show");
+        }
+        //Scroll animation
+
+        if(this.scrollY > 300){
+            $('.about .title').addClass("animate__animated animate__fadeInLeft");
+        }else{
+        console.log(".about .title  animation error");
+        }
+
+
+
+
+
     });
 
     // slide-up script
@@ -21,6 +39,34 @@ $(document).ready(function(){
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
+
+    $('.scroll-up-btn').click(function(){
+        $('html').css('.navbar.sticky')
+        // removing smooth scroll on slide-up button click
+        $('html').css("scrollBehavior", "auto");
+    });
+
+    /* // slide-up script
+    function changeColor (){
+        console.log("T GGNR>KLGN KJSFDNSQJKL?QSF ?SKLD?D FKJL.?QSWFSQJNKJKNFDSJKNFDQSJN?K/FSDNJK? ")
+        var element = document.querySelectorAll(".colorselect");
+        element.classList.toggle("changecolor");
+    }; */
+    $('.change-color-btn').click(function(){
+        {
+            document.getElementsByClassName("colorselect").style.backgroundColor="yellow";
+            console.log("jfhdsqjkfhkfhjkshfksdhkfhsdkj");
+                }
+    });
+
+    function myFunction() {
+        document.getElementById("myDiv").style.backgroundColor = "red";
+      }
+
+
+ 
+
+            
 
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
@@ -61,6 +107,11 @@ $(document).ready(function(){
         backSpeed: 140,
         loop: false
     });
+
+    
+
+   
+
 
     // owl carousel script
     $('.saecontent').owlCarousel({
@@ -109,4 +160,3 @@ $(document).ready(function(){
 
 
 });
-
