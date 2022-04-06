@@ -21,30 +21,47 @@ $(document).ready(function(){
         }
         //Scroll animation
 
-        if(this.scrollY > 300){
-            $('.about .title').addClass("animate__animated animate__fadeInLeft");
+        //all animations
+        if(this.scrollY > 100){
+            $('.about .title').addClass("animate__animated animate__fadeInRight visible");
         }else{
-        console.log(".about .title  animation error");
         }
+        if(this.scrollY > 200){
+            $('.about .about-content .right').addClass("animate__animated animate__fadeInRight visible");
+        }else{
+        }
+        if(this.scrollY > 200){
+            $('.about .about-content .right a').addClass("animate__animated animate__fadeInRight delay-test visible");
+        }else{            
+        }
+        if(this.scrollY > 200){
+            $('.about .about-content .left').addClass("animate__animated animate__fadeInLeft visible");
+        }else{
+        }
+
+
+
+
+
         if(this.scrollY > 900){
             $('.ProjetSAE .title').addClass("animate__animated animate__fadeInLeft");
         }else{
-        console.log(".about .title  animation error");
+            $('.about .title').addClass("");
         }
         if(this.scrollY > 1500){
-            $('.skills .title').addClass("animate__animated animate__fadeInLeft");
+            $('.skills .title').addClass("animate__animated animate__fadeInRight");
         }else{
-        console.log(".about .title  animation error");
+            $('.about .title').addClass("");
         }
         if(this.scrollY > 1900){
             $('.projetsplus .title').addClass("animate__animated animate__fadeInLeft");
         }else{
-        console.log(".about .title  animation error");
+            $('.about .title').addClass("");
         }
         if(this.scrollY > 2500){
-            $('.contact .title').addClass("animate__animated animate__fadeInLeft");
+            $('.contact .title').addClass("animate__animated animate__fadeInRight");
         }else{
-        console.log(".about .title  animation error");
+            $('.about .title').addClass("");
         }
 
 
@@ -78,9 +95,6 @@ $(document).ready(function(){
                 }
     });
 
-    function myFunction() {
-        document.getElementById("myDiv").style.backgroundColor = "red";
-      }
 
 
  

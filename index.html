@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathis DUPUIS</title>
+    <link rel="icon" type="image/png" href="images/profile-1.jpeg" />
+
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -58,7 +61,7 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">A propos de <span class="typing-3"></span></h2>
+            <div data-aos="fade-left"><h2 class="title ">A propos de <span class="typing-3"></span></h2></div>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/mathisvolantd.png" alt="">
@@ -69,6 +72,7 @@
                     <a href="https://drive.google.com/file/d/1H6_wy_uW8LthcWWCE2Dyj83lc-I9_-tY/view?usp=sharing" target="_blank">Mon CV</a>
                     <a href="https://drive.google.com/drive/folders/1HhXCbaQwdrf_5zGeMwx36np4mBIv0L_C?usp=sharing" target="_blank">Compétences </a>
                     <a href="https://sway.office.com/ITC0O5FxuHqKxdmg?ref=Link&loc=play" target="_blank">Lettre de motivation </a>
+                    <a class="delay-test" href="https://www.linkedin.com/in/mathis-dupuis-010a12235/" target="_blank"> Linked<i class='fab fa-linkedin fa-lg'></i></a>
                 </div>
             </div>
         </div>
@@ -290,5 +294,10 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
 </body>
 </html>

@@ -25,7 +25,14 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: crimson;
 }
-
+.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+.invisible {
+    visibility: hidden;
+    opacity: 0;
+  }
 .changecolor{
     color:blue;
     background-color: orangered;
@@ -68,6 +75,7 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+    opacity: 0;
 }
 section .title::before{
     content: "";
@@ -160,6 +168,9 @@ section .title::after{
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+.delay-test {
+    animation-delay: 1250ms;
 }
 .delay-1 {
     animation-delay: 250ms;
