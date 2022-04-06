@@ -106,6 +106,21 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "smooth");
     });
 
+
+
+
+
+// SAE
+    $('.card').click(function(){
+        console.log("jfhdsqjkfhkfhjkshfksdhkfhsdkj");
+        $('.classSAE').addClass("visible");
+    });
+
+
+
+
+
+
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");

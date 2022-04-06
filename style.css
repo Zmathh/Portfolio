@@ -27,11 +27,11 @@ html{
 }
 .visible {
     visibility: visible;
-    opacity: 1;
+ 
   }
 .invisible {
     visibility: hidden;
-    opacity: 0;
+
   }
 .changecolor{
     color:blue;
@@ -360,7 +360,6 @@ section .title::after{
 
 .classSAE{
     position: relative; 
-    /* overflow: hidden;  */
     padding: 0 25px; 
     border: hidden ;
     overflow: hidden;
@@ -373,6 +372,7 @@ section .title::after{
     overflow-x: hidden;
     border-radius:10px;
     box-shadow: 10px 10px 25px -10px black;
+    
     
 }
 
