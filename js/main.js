@@ -43,22 +43,22 @@ $(document).ready(function(){
 
 
 
-        if(this.scrollY > 900){
+        if(this.scrollY > 400){
             $('.ProjetSAE .title').addClass("animate__animated animate__fadeInLeft");
         }else{
             $('.about .title').addClass("");
         }
-        if(this.scrollY > 1500){
+        if(this.scrollY > 500){
             $('.skills .title').addClass("animate__animated animate__fadeInRight");
         }else{
             $('.about .title').addClass("");
         }
-        if(this.scrollY > 1900){
+        if(this.scrollY > 1700){
             $('.projetsplus .title').addClass("animate__animated animate__fadeInLeft");
         }else{
             $('.about .title').addClass("");
         }
-        if(this.scrollY > 2500){
+        if(this.scrollY > 2300){
             $('.contact .title').addClass("animate__animated animate__fadeInRight");
         }else{
             $('.about .title').addClass("");
