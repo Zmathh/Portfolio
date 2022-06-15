@@ -129,14 +129,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Etudiant en GEII", "Etudiant", "Etudiant à Chartres", "21 ans"],
+        strings: ["Etudiant GEII", "Etudiant", "Etudiant à Chartres", "21 ans"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Etudiant en GEII", "Etudiant", "Etudiant à Chartres", "21 ans" ],
+        strings: ["Etudiant GEII", "Etudiant", "Etudiant à Chartres", "21 ans" ],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
