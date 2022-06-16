@@ -150,7 +150,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-4", {
-        strings: ["Contactez moi","Contactez moi","Contactez moi","","Lets get in touch" ],
+        strings: ["Contactez moi"],
         typeSpeed: 80,
         backSpeed: 140,
         loop: false
