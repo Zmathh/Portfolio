@@ -606,7 +606,7 @@ section .title::after{
   }
   
 .timeline .timeline-content {
-    max-width: 800px;
+    max-width: 400px;
     margin: 0 auto;
   }
   
@@ -646,18 +646,34 @@ section .title::after{
   .timeline .timeline-date {
     position: absolute;
     top: -30px;
-    left: 50%;
+    /*left: 45%;*/
     transform: translateX(-50%);
     font-weight: bold;
   }
-  
-  .timeline .timeline-content {
-    margin-left: 40px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  .timeline .timeline-date .droite {
+    left: 45%;
+  }
+
+  .timeline .timeline-date .gauche {
+    left: 90%;
   }
   
+  .timeline .timeline-content {
+    /*margin-left: 40px;*/
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+
+  .timeline .timeline-content .gauche {
+   margin-left: 40px;
+  }
+
+  .timeline .timeline-content .droite {
+    margin-left: 80px;
+  }
+
   .timeline h3 {
     margin-top: 0;
   }
