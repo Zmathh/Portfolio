@@ -55,13 +55,14 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .ProjetSAE, .skills, .projetsplus, .contact, footer{
+.about, .ProjetSAE, .skills, .projetsplus, .contact, Parcours, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .ProjetSAE .saecontent,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content,
+.Parcours .Parcours-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -516,6 +517,125 @@ section .title::after{
     width: 70%;
     content: ""
 }
+
+/* Parcours********************/
+.Parcours .title::after{
+    background: #fff;
+    /*content: "";*/
+}
+.Parcours .Parcours-content .column{
+    width: calc(50% - 30px);
+}
+.Parcours .Parcours-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.Parcours .Parcours-content .left p{
+    text-align: justify;
+}
+.Parcours .Parcours-content .left a{
+    display: inline-block;
+    background: #204B66;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #204B66;
+    transition: all 0.3s ease;
+}
+.Parcours .Parcours-content .left a:hover{
+    color: #204B66;
+    background: none;
+}
+.Parcours .Parcours-content .right .bars{
+    margin-bottom: 15px;
+}
+.Parcours .Parcours-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.Parcours .Parcours-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.Parcours .Parcours-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.Parcours .Parcours-content .right .line::before{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #204B66;
+}
+.Parcours .Parcours-content .html::before{
+    width: 90%;
+    content: ""
+}
+.Parcours .Parcours-content .css::before{
+    width: 60%;
+    content: "..."
+}
+.Parcours .Parcours-content .js::before{
+    width: 80%;
+    content: ""
+}
+.Parcours .Parcours-content .php::before{
+    width: 50%;
+    content: "..."
+}
+.Parcours .Parcours-content .mysql::before{
+    width: 70%;
+    content: ""
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+  }
+  
+  .timeline li {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .timeline-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    position: relative;
+  }
+  
+  .timeline-badge {
+    background-color: #2196f3;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+  }
+  
+
+
+
 
 /* projetsplus section styling */
 .projetsplus .title::after{
