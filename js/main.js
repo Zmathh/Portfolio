@@ -206,5 +206,12 @@ $(document).ready(function(){
         }
 });
 
+var trigger = document.querySelector('.trigger');
+var message = document.querySelector('.message');
+
+trigger.addEventListener('click', function() {
+  message.classList.add('fade-in');
+});
+
 
 });

@@ -865,6 +865,23 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+.message {
+    display: none;
+  }
+  
+  .message.fade-in {
+    display: block;
+    animation: fade-in 0.5s ease-in-out;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
