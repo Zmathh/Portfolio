@@ -76,7 +76,7 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
-    opacity: 0;
+    opacity: 100;
 }
 section .title::before{
     content: "";
@@ -170,33 +170,7 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
-.delay-test {
-    animation-delay: 1250ms;
-}
-.delay-1 {
-    animation-delay: 250ms;
-}
-.delayHome{
-    animation-delay: 350ms;
-}
-.delayAbout{
-    animation-delay: 450ms;
-}
-.delayProjetSAE{
-    animation-delay: 550ms;
-}
-.delaySkills{
-    animation-delay: 650ms;
-}
-    .delaytimeline{
-    animation-delay: 750ms;
-}
-.delayProjetPlus{
-    animation-delay: 850ms;
-}
-.delayContact{
-    animation-delay: 950ms;
-}
+
 
 .scroll-up-btn{
     position: fixed;

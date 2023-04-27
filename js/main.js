@@ -142,13 +142,6 @@ $(document).ready(function(){
         loop: true
     });
 
-    var typed = new Typed(".typing-3", {
-        strings: ["mathis", "", "", "moi" ],
-        typeSpeed: 140,
-        backSpeed: 160,
-        loop: false
-    });
-
     var typed = new Typed(".typing-4", {
         strings: ["Contactez moi"],
         typeSpeed: 80,
@@ -179,6 +172,18 @@ $(document).ready(function(){
             },
             1100:{
                 items: 3,
+                nav: false
+            },
+            1800:{
+                items: 4,
+                nav: false
+            },
+            2200:{
+                items: 5,
+                nav: false
+            },
+            2900:{
+                items: 6,
                 nav: false
             },
         }
