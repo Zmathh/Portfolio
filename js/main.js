@@ -118,6 +118,22 @@ $(document).ready(function(){
 
 
 
+    //mon age
+let dateDeNaissance = new Date("2001-01-07");
+
+// Fonction pour calculer l'âge à partir de la date de naissance
+function calculerAge(dateDeNaissance) {
+  let ageMS = Date.now() - dateDeNaissance.getTime();
+  let ageDate = new Date(ageMS);
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
+// Stocker l'âge dans la variable "MonAge"
+let MonAge = calculerAge(dateDeNaissance);
+
+// Afficher l'âge
+console.log("Vous avez " + MonAge + " ans.");
+
 
 
 
@@ -129,14 +145,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Etudiant GEII", "Etudiant", "Etudiant à Chartres", "21 ans"],
+        strings: ["Etudiant GEII", "Etudiant", "Etudiant à Chartres", MonAge+" ans"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Etudiant GEII", "Etudiant", "Etudiant à Chartres", "21 ans" ],
+        strings: ["Etudiant GEII", "Etudiant", "Etudiant à Chartres", "J'ai "+MonAge+" ans" ],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -211,28 +227,119 @@ $(document).ready(function(){
         }
 });
 
-var trigger = document.querySelector('.trigger');
-var message = document.querySelector('.message');
+var trigger1 = document.querySelector('.trigger1');
+var message1 = document.querySelector('.message1');
 
-trigger.addEventListener('click', () => {
-  var computedStyle = window.getComputedStyle(message);
+
+
+trigger1.addEventListener('click', () => {
+    console.log("T GGNR>KLGN KJSFDNSQJKL?QSF ?SKLD?D FKJL.?QSWFSQJNKJKNFDSJKNFDQSJN?K/FSDNJK? ")
+  var computedStyle = window.getComputedStyle(message1);
   var displayValue = computedStyle.getPropertyValue('display');
   
   if (displayValue === 'none') {
-    message.style.display = 'block';
-    message.style.animation = 'fade-in 0.5s';
-    message.addEventListener('animationend', () => {
-      message.style.animation = '';
+    message1.style.display = 'block';
+    message1.style.animation = 'fade-in 0.5s';
+    message1.addEventListener('animationend', () => {
+      message1.style.animation = '';
     }, {once: true});
   } else {
-    message.style.animation = 'fade-out 0.5s';
+    message1.style.animation = 'fade-out 0.5s';
     setTimeout(() => {
-      message.style.display = 'none';
-      message.style.animation = '';
+      message1.style.display = 'none';
+      message1.style.animation = '';
     }, 500);
   }
 });
 
+
+var trigger2 = document.querySelector('.trigger2');
+var message2 = document.querySelector('.message2');
+
+trigger2.addEventListener('click', () => {
+    var computedStyle = window.getComputedStyle(message2);
+    var displayValue = computedStyle.getPropertyValue('display');
+    
+    if (displayValue === 'none') {
+      message2.style.display = 'block';
+      message2.style.animation = 'fade-in 0.5s';
+      message2.addEventListener('animationend', () => {
+        message2.style.animation = '';
+      }, {once: true});
+    } else {
+      message2.style.animation = 'fade-out 0.5s';
+      setTimeout(() => {
+        message2.style.display = 'none';
+        message2.style.animation = '';
+      }, 500);
+    }
+  });
+
+  var trigger3 = document.querySelector('.trigger3');
+  var message3 = document.querySelector('.message3');
+  
+  trigger3.addEventListener('click', () => {
+      var computedStyle = window.getComputedStyle(message3);
+      var displayValue = computedStyle.getPropertyValue('display');
+      
+      if (displayValue === 'none') {
+        message3.style.display = 'block';
+        message3.style.animation = 'fade-in 0.5s';
+        message3.addEventListener('animationend', () => {
+          message3.style.animation = '';
+        }, {once: true});
+      } else {
+        message3.style.animation = 'fade-out 0.5s';
+        setTimeout(() => {
+          message3.style.display = 'none';
+          message3.style.animation = '';
+        }, 500);
+      }
+    });
+
+    var trigger4 = document.querySelector('.trigger4');
+    var message4 = document.querySelector('.message4');
+    
+    trigger4.addEventListener('click', () => {
+        var computedStyle = window.getComputedStyle(message4);
+        var displayValue = computedStyle.getPropertyValue('display');
+        
+        if (displayValue === 'none') {
+          message4.style.display = 'block';
+          message4.style.animation = 'fade-in 0.5s';
+          message4.addEventListener('animationend', () => {
+            message4.style.animation = '';
+          }, {once: true});
+        } else {
+          message4.style.animation = 'fade-out 0.5s';
+          setTimeout(() => {
+            message4.style.display = 'none';
+            message4.style.animation = '';
+          }, 500);
+        }
+      });
+
+      var trigger5 = document.querySelector('.trigger5');
+      var message5 = document.querySelector('.message5');
+      
+      trigger5.addEventListener('click', () => {
+          var computedStyle = window.getComputedStyle(message5);
+          var displayValue = computedStyle.getPropertyValue('display');
+          
+          if (displayValue === 'none') {
+            message5.style.display = 'block';
+            message5.style.animation = 'fade-in 0.5s';
+            message5.addEventListener('animationend', () => {
+              message5.style.animation = '';
+            }, {once: true});
+          } else {
+            message5.style.animation = 'fade-out 0.5s';
+            setTimeout(() => {
+              message5.style.display = 'none';
+              message5.style.animation = '';
+            }, 500);
+          }
+        });
 
 
 });
