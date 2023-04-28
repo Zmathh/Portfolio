@@ -231,7 +231,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/apple-1367032.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -597,6 +597,8 @@ section .title::after{
     width: 2px;
     background-color: #ccc;
     transform: translateX(-50%);
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
   
   .timeline .timeline-item {
@@ -655,6 +657,24 @@ section .title::after{
   .timeline p {
     margin-bottom: 0;
   }
+  .timeline .timeline-content a{
+    
+    display: inline-block;
+    background: #204B66;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 12px;
+    margin-top: 5px;
+    /*font-weight: 1000;*/
+    border-radius: 6px;
+    border: 2px solid #204B66;
+    transition: all 0.3s ease;
+    
+}
+.timeline .timeline-content a:hover{
+    color: #204B66;
+    background: none;
+}
   
 
 
@@ -838,18 +858,68 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-
-.message {
+/*---------------------*/
+.message1 {
     display: none;
     }
-.message.fade-in {
+.message1.fade-in {
 display: block;
 animation: fade-in 0.5s ease-in-out;
 }
 
-.message.fade-out{
+.message1.fade-out{
     animation: fade-out 0.5s ease-in-out ;
   }
+/*---------------------*/
+  .message2 {
+    display: none;
+    }
+.message2.fade-in {
+display: block;
+animation: fade-in 0.5s ease-in-out;
+}
+
+.message2.fade-out{
+    animation: fade-out 0.5s ease-in-out ;
+  }
+/*---------------------*/
+  .message3 {
+    display: none;
+    }
+.message3.fade-in {
+display: block;
+animation: fade-in 0.5s ease-in-out;
+}
+
+.message3.fade-out{
+    animation: fade-out 0.5s ease-in-out ;
+  }
+/*----------------------*/
+.message4 {
+    display: none;
+    }
+.message4.fade-in {
+display: block;
+animation: fade-in 0.5s ease-in-out;
+}
+
+.message4.fade-out{
+    animation: fade-out 0.5s ease-in-out ;
+  }
+/*--------------------------*/
+.message5 {
+    display: none;
+    }
+.message5.fade-in {
+display: block;
+animation: fade-in 0.5s ease-in-out;
+}
+
+.message5.fade-out{
+    animation: fade-out 0.5s ease-in-out ;
+  }
+/*--------------------------*/
+
 
 @keyframes fade-in {
 0% {
