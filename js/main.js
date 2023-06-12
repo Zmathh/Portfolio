@@ -211,73 +211,11 @@ fullViewModeButton.addEventListener('click', function() {
 });
 
 
-const listModeButton1 = document.querySelector('.list-mode-button1');
-const fullViewModeButton1 = document.querySelector('.full-view-mode-button1');
 
-// Récupérer la section contenant les cartes
-const saeContent1 = document.querySelector('.saecontent');
-
-// Ajouter un écouteur d'événement sur le bouton "Mode liste"
-listModeButton1.addEventListener('click', function() {
-  // Ajouter la classe "list-mode" à la section contenant les cartes
-  saeContent1.classList.add('list-mode');
-  // Supprimer la classe "full-view-mode" de la section contenant les cartes
-  saeContent1.classList.remove('full-view-mode');
-
-  // Activer le bouton "Mode liste" en lui ajoutant la classe "active"
-  listModeButton1.classList.add('active');
-  // Désactiver le bouton "Mode pleine vue" en lui supprimant la classe "active"
-  fullViewModeButton1.classList.remove('active');
-});
-
-// Ajouter un écouteur d'événement sur le bouton "Mode pleine vue"
-fullViewModeButton.addEventListener('click', function() {
-  // Ajouter la classe "full-view-mode" à la section contenant les cartes
-  saeContent.classList.add('full-view-mode');
-  // Supprimer la classe "list-mode" de la section contenant les cartes
-  saeContent.classList.remove('list-mode');
-
-  // Activer le bouton "Mode pleine vue" en lui ajoutant la classe "active"
-  fullViewModeButton.classList.add('active');
-  // Désactiver le bouton "Mode liste" en lui supprimant la classe "active"
-  listModeButton.classList.remove('active');
-});
 
 
 // owl carousel script
-$('.saecontent').owlCarousel({
-  margin: 20,
-  loop: true,
-  autoplay: true,
-  autoplayTimeOut: 2000,
-  autoplayHoverPause: true,
-  responsive: {
-      0:{
-          items: 1,
-          nav: false
-      },
-      700:{
-          items: 2,
-          nav: false
-      },
-      1100:{
-          items: 3,
-          nav: false
-      },
-      1800:{
-          items: 4,
-          nav: false
-      },
-      2200:{
-          items: 5,
-          nav: false
-      },
-      2900:{
-          items: 6,
-          nav: false
-      },
-  }
-});
+
 
 $('.carousel').owlCarousel({
   margin: 20,
