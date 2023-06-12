@@ -459,16 +459,18 @@ section .title::after{
   
   .ProjetSAE .saecontent{
     display:flex;
+    /*flex-shrink: 1;*/
+    flex-grow: 1;
     flex-direction: column;
     flex-wrap: wrap;
+
     /*max-width: 100%;*/
     /*justify-content: flex-start;*/
-    align-items: stretch;
+    
     /*max-height: 600px;*/
     max-width: 100%;
     overflow-y: auto;
     margin-bottom: 10px;
-    box-shadow: 0 0 8px 8px #111 inset;
     padding: 10px;
     
 }
@@ -480,7 +482,7 @@ section .title::after{
   .ProjetSAE .saecontent .card{
     background: #222;
     /*flex: 0 0 calc(10% - 10px);*/
-    flex-shrink: 1;
+
     margin: 10px;
     box-sizing: border-box;
 
@@ -492,6 +494,8 @@ section .title::after{
     height: 5%;
     /*width: 20%;*/
     transition: all 0.3s ease;
+    min-width: 45%;
+    max-width: 45%;
 
   }
 
@@ -510,6 +514,8 @@ section .title::after{
     overflow: hidden;
     height: 5%;
     /*width: 20%;*/
+    min-width: 45%;
+    max-width: 45%;
     transition: all 0.3s ease;
   }
 
@@ -525,6 +531,8 @@ section .title::after{
     cursor: pointer;
     overflow: hidden;
     min-height: 423px;
+    min-width: 45%;
+    max-width: 45%;
     transition: all 0.3s ease;
   }
 
