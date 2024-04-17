@@ -9,6 +9,7 @@
 }
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 /* custom scroll bar */
@@ -434,7 +435,8 @@ section .title::after{
     
 }*/
 
-.ProjetSAE .view-mode-button {
+
+.ProjetSAE .view-mode-button {  
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
@@ -444,7 +446,6 @@ section .title::after{
   .ProjetSAE .view-mode-button button {
     margin-left: 10px;
     padding: 5px 10px;
-    font-size: 20px;
     background-color: transparent;
     border: none;
     color: #fff;
@@ -457,45 +458,44 @@ section .title::after{
     transition: all 0.3s ease-in-out;
   }
   
-  .ProjetSAE .saecontent{
-    display:flex;
-    /*flex-shrink: 1;*/
-    flex-grow: 1;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    /*max-width: 100%;*/
-    /*justify-content: flex-start;*/
-    
-    /*max-height: 600px;*/
-    max-width: 100%;
-    overflow-y: auto;
+  /* start ---------------------------------------------------------------*/
+  .ProjetSAE .saecontent{  
+    display: flex;
+    font-size: 20px;
+    /* background-color: #0AD;  */
+    /* border: 2px solid blue; */
+    box-sizing: border-box;
+    /*margin: 20px 0px;*/
     margin-bottom: 10px;
     padding: 10px;
+        
+    overflow-x:auto;
+    flex-flow: row ;
     
-}
+  }
 
   .ProjetSAE .view-mode-button button.active {
     color: #204B66;
      transition: all 0.3s ease-in-out;
   }
+
   .ProjetSAE .saecontent .card{
     background: #222;
-    /*flex: 0 0 calc(10% - 10px);*/
-
     margin: 10px;
-    box-sizing: border-box;
-
     text-align: left;
     border-radius: 6px;
     padding: 20px;
     cursor: pointer;
-    overflow: hidden;
-    height: 5%;
-    /*width: 20%;*/
+    /* overflow: hidden; */
+    height: 150px;
+    min-width: 49%;
     transition: all 0.3s ease;
-    min-width: 45%;
-    max-width: 45%;
+
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex: 100 1 100%;
+  
+  
 
   }
 
@@ -503,20 +503,19 @@ section .title::after{
 
   .ProjetSAE .saecontent.list-mode .card {
     background: #222;
-    flex: 0 0 calc(10% - 10px);
     margin: 10px;
-    box-sizing: border-box;
-
     text-align: left;
     border-radius: 6px;
     padding: 20px;
     cursor: pointer;
-    overflow: hidden;
-    height: 5%;
-    /*width: 20%;*/
-    min-width: 45%;
-    max-width: 45%;
+    /* overflow: hidden; */
+    height: 150px;
+    min-width: 49%;
     transition: all 0.3s ease;
+
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex: 100 1 100%;
   }
 
   .ProjetSAE .saecontent.full-view-mode .card {
@@ -530,26 +529,29 @@ section .title::after{
     padding: 20px;
     cursor: pointer;
     overflow: hidden;
-    min-height: 423px;
-    min-width: 45%;
-    max-width: 45%;
+    /* min-height: 60%; */
+    /* max-height: 10%; */
+    max-width: 80%;
+    /* min-width: 45%;
+    max-width: 45%; */
     transition: all 0.3s ease;
   }
 
   .ProjetSAE .saecontent.list-mode1 .card {
     background: #222;
-    flex: 0 0 calc(10% - 10px);
     margin: 10px;
-    box-sizing: border-box;
-
     text-align: left;
     border-radius: 6px;
     padding: 20px;
     cursor: pointer;
-    overflow: hidden;
-    height: 5%;
-    /*width: 20%;*/
+    /* overflow: hidden; */
+    height: 150px;
+    min-width: 49%;
     transition: all 0.3s ease;
+
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex: 100 1 100%;
   }
 
   .ProjetSAE .saecontent.full-view-mode1 .card {
@@ -568,8 +570,14 @@ section .title::after{
   }
 
 .ProjetSAE .descSAE {
-    font-size: 12px;
+    font-size: 2vw;  /*font descsae */
 }
+
+/* .ProjetSAE .text {
+    font-size: 5vw;  /*font descsae 
+    font-weight: 500;
+} 
+*/
 
 .ProjetSAE, .projetsplus {
     color: #fff;
@@ -623,7 +631,7 @@ section .title::after{
 .ProjetSAE .saecontent .card .text {
     color: #204B66;
     transition: color 0.3s ease;
-    font-size: 20px; /* Réduction de la taille de police pour les titres */
+    font-size: 4vw;
     font-weight: 500;
     margin: 5px 0 2px 0;
 }
@@ -634,7 +642,7 @@ section .title::after{
 }
 
 .ProjetSAE .saecontent .card i {
-    font-size: 20px; /* Réduction de la taille de l'icône */
+    font-size: 5vw; /* icône */
     color: #204B66;
     transition: color 0.3s ease;
 }
@@ -1305,3 +1313,25 @@ opacity: 1;
         line-height: 38px;
     }
 }
+
+@media screen and (min-width: 947px) {
+    .ProjetSAE .saecontent .card .text,
+    .ProjetSAE .saecontent .card i{
+    font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+    }
+    .ProjetSAE .descSAE {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+
+  @media screen and (min-width: 1104px) {
+    .ProjetSAE .saecontent .card .text,
+    .ProjetSAE .saecontent .card i{
+    font-size: 28px;
+    }
+    .ProjetSAE .descSAE {
+      font-size: 18px;
+      /* background-color : red; */
+    }
+
+  }
