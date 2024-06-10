@@ -468,8 +468,9 @@ section .title::after{
     /*margin: 20px 0px;*/
     margin-bottom: 10px;
     padding: 10px;
-        
-    overflow-x:auto;
+
+    overflow-x:scroll;
+
     flex-flow: row ;
     
   }
@@ -488,17 +489,16 @@ section .title::after{
     cursor: pointer;
     /* overflow: hidden; */
     height: 150px;
-    min-width: 49%;
+    /* min-width: 49%; */
+    min-width: 250px;
     transition: all 0.3s ease;
 
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
+
     flex: 100 1 100%;
-  
-  
-
   }
-
 
 
   .ProjetSAE .saecontent.list-mode .card {
@@ -509,22 +509,22 @@ section .title::after{
     padding: 20px;
     cursor: pointer;
     /* overflow: hidden; */
-    height: 150px;
+    height: 450px;
     min-width: 49%;
     transition: all 0.3s ease;
 
     box-sizing: border-box;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     flex: 100 1 100%;
   }
 
   .ProjetSAE .saecontent.full-view-mode .card {
     background: #222;
-    flex: 0 0 calc(10% - 10px);
+    /* flex: 0 0 calc(10% - 10px); */
     margin: 10px;
     box-sizing: border-box;
 
-    text-align: center;
+    /* text-align: center; */
     border-radius: 6px;
     padding: 20px;
     cursor: pointer;
@@ -545,29 +545,70 @@ section .title::after{
     padding: 20px;
     cursor: pointer;
     /* overflow: hidden; */
-    height: 150px;
+    height: 450px;
     min-width: 49%;
     transition: all 0.3s ease;
 
     box-sizing: border-box;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     flex: 100 1 100%;
   }
 
   .ProjetSAE .saecontent.full-view-mode1 .card {
     background: #222;
-    flex: 0 0 calc(10% - 10px);
+    /* flex: 0 0 calc(10% - 10px); */
     margin: 10px;
     box-sizing: border-box;
 
-    text-align: center;
+    /* text-align: center; */
     border-radius: 6px;
     padding: 20px;
     cursor: pointer;
     overflow: hidden;
-    min-height: 423px;
+    /* min-height: 60%; */
+    /* max-height: 10%; */
+    max-width: 80%;
+    /* min-width: 45%;
+    max-width: 45%; */
     transition: all 0.3s ease;
   }
+
+  .ProjetSAE .saecontent.list-mode2 .card {
+    background: #222;
+    margin: 10px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 20px;
+    cursor: pointer;
+    /* overflow: hidden; */
+    height: 450px;
+    min-width: 49%;
+    transition: all 0.3s ease;
+
+    box-sizing: border-box;
+    /* overflow-y: auto; */
+    flex: 100 1 100%;
+  }
+
+  .ProjetSAE .saecontent.full-view-mode2 .card {
+    background: #222;
+    /* flex: 0 0 calc(10% - 10px); */
+    margin: 10px;
+    box-sizing: border-box;
+
+    /* text-align: center; */
+    border-radius: 6px;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    /* min-height: 60%; */
+    /* max-height: 10%; */
+    max-width: 80%;
+    /* min-width: 45%;
+    max-width: 45%; */
+    transition: all 0.3s ease;
+  }
+
 
 .ProjetSAE .descSAE {
     font-size: 2vw;  /*font descsae */
