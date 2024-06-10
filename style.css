@@ -656,6 +656,7 @@ section .title::after{
 
 .ProjetSAE .saecontent .card:hover {
     background: #204B66;
+    transform: scale(1.05);
 }
 
 .ProjetSAE .saecontent .card .box {
@@ -667,7 +668,7 @@ section .title::after{
 }
 
 .ProjetSAE .saecontent .card:hover .box {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 .ProjetSAE .saecontent .card .text {
