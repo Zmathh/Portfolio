@@ -176,7 +176,6 @@ console.log("Vous avez " + MonAge + " ans.");
   });
 
 //mode liste ou pas
-
 // Récupérer les boutons
 const listModeButton = document.querySelector('.list-mode-button');
 const fullViewModeButton = document.querySelector('.full-view-mode-button');
@@ -188,6 +187,7 @@ const saeContent = document.querySelector('.saecontent');
 listModeButton.addEventListener('click', function() {
   // Ajouter la classe "list-mode" à la section contenant les cartes
   saeContent.classList.add('list-mode');
+  applyBackgroundImages();
   // Supprimer la classe "full-view-mode" de la section contenant les cartes
   saeContent.classList.remove('full-view-mode');
 
@@ -201,6 +201,7 @@ listModeButton.addEventListener('click', function() {
 fullViewModeButton.addEventListener('click', function() {
   // Ajouter la classe "full-view-mode" à la section contenant les cartes
   saeContent.classList.add('full-view-mode');
+  removeBackgroundImages();
   // Supprimer la classe "list-mode" de la section contenant les cartes
   saeContent.classList.remove('list-mode');
 
@@ -210,78 +211,101 @@ fullViewModeButton.addEventListener('click', function() {
   listModeButton.classList.remove('active');
 });
 
-////
+function applyBackgroundImages() {
+  const cards = document.querySelectorAll('.saecontent.list-mode .card');
+  cards.forEach(card => {
+    const bg = card.getAttribute('data-bg');
+    if (bg) {
+      card.style.backgroundImage = `url(${bg})`;
+    }
+  });
+}
 
-// Récupérer les boutons
+function removeBackgroundImages() {
+  const cards = document.querySelectorAll('.saecontent .card');
+  cards.forEach(card => {
+    card.style.backgroundImage = '';
+  });
+}
+
+// For section 2
 const listModeButton1 = document.querySelector('.list-mode-button1');
 const fullViewModeButton1 = document.querySelector('.full-view-mode-button1');
-
-// Récupérer la section contenant les cartes
 const saeContent1 = document.querySelector('.boutonsaecontent1');
 
-// Ajouter un écouteur d'événement sur le bouton "Mode liste"
 listModeButton1.addEventListener('click', function() {
-  // Ajouter la classe "list-mode" à la section contenant les cartes
   saeContent1.classList.add('list-mode1');
-  // Supprimer la classe "full-view-mode" de la section contenant les cartes
+  applyBackgroundImages1();
   saeContent1.classList.remove('full-view-mode1');
-
-  // Activer le bouton "Mode liste" en lui ajoutant la classe "active"
   listModeButton1.classList.add('active');
-  // Désactiver le bouton "Mode pleine vue" en lui supprimant la classe "active"
   fullViewModeButton1.classList.remove('active');
 });
 
-// Ajouter un écouteur d'événement sur le bouton "Mode pleine vue"
 fullViewModeButton1.addEventListener('click', function() {
-  // Ajouter la classe "full-view-mode" à la section contenant les cartes
   saeContent1.classList.add('full-view-mode1');
-  // Supprimer la classe "list-mode" de la section contenant les cartes
+  removeBackgroundImages1();
   saeContent1.classList.remove('list-mode1');
-
-  // Activer le bouton "Mode pleine vue" en lui ajoutant la classe "active"
   fullViewModeButton1.classList.add('active');
-  // Désactiver le bouton "Mode liste" en lui supprimant la classe "active"
   listModeButton1.classList.remove('active');
 });
 
-////
+function applyBackgroundImages1() {
+  const cards = document.querySelectorAll('.saecontent1.list-mode1 .card');
+  cards.forEach(card => {
+    const bg = card.getAttribute('data-bg');
+    if (bg) {
+      card.style.backgroundImage = `url(${bg})`;
+    }
+  });
+}
 
-// Récupérer les boutons
+function removeBackgroundImages1() {
+  const cards = document.querySelectorAll('.saecontent1 .card');
+  cards.forEach(card => {
+    card.style.backgroundImage = '';
+  });
+}
+
+// For section 3
 const listModeButton2 = document.querySelector('.list-mode-button2');
 const fullViewModeButton2 = document.querySelector('.full-view-mode-button2');
-
-// Récupérer la section contenant les cartes
 const saeContent2 = document.querySelector('.boutonsaecontent2');
 
-// Ajouter un écouteur d'événement sur le bouton "Mode liste"
 listModeButton2.addEventListener('click', function() {
-  // Ajouter la classe "list-mode" à la section contenant les cartes
   saeContent2.classList.add('list-mode2');
-  // Supprimer la classe "full-view-mode" de la section contenant les cartes
+  applyBackgroundImages2();
   saeContent2.classList.remove('full-view-mode2');
-
-  // Activer le bouton "Mode liste" en lui ajoutant la classe "active"
   listModeButton2.classList.add('active');
-  // Désactiver le bouton "Mode pleine vue" en lui supprimant la classe "active"
   fullViewModeButton2.classList.remove('active');
 });
 
-// Ajouter un écouteur d'événement sur le bouton "Mode pleine vue"
 fullViewModeButton2.addEventListener('click', function() {
-  // Ajouter la classe "full-view-mode" à la section contenant les cartes
   saeContent2.classList.add('full-view-mode2');
-  // Supprimer la classe "list-mode" de la section contenant les cartes
+  removeBackgroundImages2();
   saeContent2.classList.remove('list-mode2');
-
-  // Activer le bouton "Mode pleine vue" en lui ajoutant la classe "active"
   fullViewModeButton2.classList.add('active');
-  // Désactiver le bouton "Mode liste" en lui supprimant la classe "active"
   listModeButton2.classList.remove('active');
 });
 
+function applyBackgroundImages2() {
+  const cards = document.querySelectorAll('.saecontent2.list-mode2 .card');
+  cards.forEach(card => {
+    const bg = card.getAttribute('data-bg');
+    if (bg) {
+      card.style.backgroundImage = `url(${bg})`;
+    }
+  });
+}
+
+function removeBackgroundImages2() {
+  const cards = document.querySelectorAll('.saecontent2 .card');
+  cards.forEach(card => {
+    card.style.backgroundImage = '';
+  });
+}
 
 
+///////
 
 
 // owl carousel script

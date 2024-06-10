@@ -470,7 +470,7 @@ section .title::after{
     margin-bottom: 10px;
     padding: 10px;
 
-    overflow-x:scroll;
+    overflow-x:auto;
 
     flex-flow: row ;
     
@@ -569,27 +569,83 @@ section .title::after{
     /* min-height: 60%; */
     /* max-height: 10%; */
     max-width: 80%;
+    
     /* min-width: 45%;
     max-width: 45%; */
     transition: all 0.3s ease;
   }
 
+
+
+
+  
   .ProjetSAE .saecontent.list-mode2 .card {
-    background: #222;
+    background: #222 center / contain no-repeat;
     margin: 10px;
     text-align: left;
     border-radius: 6px;
     padding: 20px;
     cursor: pointer;
-    /* overflow: hidden; */
     height: 450px;
     min-width: 49%;
     transition: all 0.3s ease;
-
     box-sizing: border-box;
-    /* overflow-y: auto; */
     flex: 100 1 100%;
+    background-image: attr(data-bg url);
   }
+  
+.ProjetSAE .saecontent.list-mode .sae-gbf-portable {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/gbf-portable.png");
+    }
+.ProjetSAE .saecontent.list-mode .sae-alimentation-stabilisee {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/alim-stabilisee.png");
+}
+.ProjetSAE .saecontent.list-mode .sae-voltmètre {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/voltmetre.jpg");
+}
+.ProjetSAE .saecontent.list-mode .sae-radar-de-recul {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/radar-de-recul.jpg");
+}
+.ProjetSAE .saecontent.list-mode .sae-mesure-de-l-energie {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/mesure-de-l-energie.jpg");
+}
+.ProjetSAE .saecontent.list-mode .sae-ampli-audio-3-voix {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/ampli-3-voix.png");
+}
+
+.ProjetSAE .saecontent.list-mode1 .sae-station-meteo {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/station-meteo.png");
+}
+.ProjetSAE .saecontent.list-mode1 .sae-cna {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/cna.jpg");
+}
+.ProjetSAE .saecontent.list-mode1 .sae-can {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/can.jpg");
+}
+.ProjetSAE .saecontent.list-mode1 .sae-labview {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/labview.jpg");
+}
+.ProjetSAE .saecontent.list-mode1 .sae-emetteur-recepteur-hf {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/emetteur-recepteur-hf.JPEG");
+}
+.ProjetSAE .saecontent.list-mode1 .stage1 {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/cxr.jpg");
+}
+
+.ProjetSAE .saecontent.list-mode2 .sae-recherche {
+    background: #222 center / cover no-repeat url("images/projets/3eme_annee/initialisation-a-la-recherche.jpg");
+}
+.ProjetSAE .saecontent.list-mode2 .sae-iot {
+    background: #222 center / cover no-repeat url("images/projets/3eme_annee/iot.png");
+}
+.ProjetSAE .saecontent.list-mode2 .sae-kart {
+    background: #222 center / cover no-repeat url("images/projets/3eme_annee/kart.jpg");
+}
+.ProjetSAE .saecontent.list-mode2 .stage2 {
+    background: #222 center / cover no-repeat url("images/projets/3eme_annee/cxr.jpg");
+}
+  
+  
 
   .ProjetSAE .saecontent.full-view-mode2 .card {
     background: #222;
@@ -602,6 +658,7 @@ section .title::after{
     padding: 20px;
     cursor: pointer;
     overflow: hidden;
+    background:hidden;
     /* min-height: 60%; */
     /* max-height: 10%; */
     max-width: 80%;
@@ -655,7 +712,9 @@ section .title::after{
 
 
 .ProjetSAE .saecontent .card:hover {
-    background: #204B66;
+    /* shadow: 1px 1px 40px black; */
+    background-color: #204B66;
+
     transform: scale(1.05);
 }
 
