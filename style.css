@@ -137,6 +137,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.3s ease;
 }
 section .title{
     position: relative;
@@ -708,6 +709,7 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+
 }
 .skills .skills-content .left p{
     text-align: justify;
@@ -781,19 +783,22 @@ section .title::after{
     /*content: "";*/
 }
 .timeline .timeline-content .column{
+    transition: all 0.3s ease;
     width: calc(50% - 30px);
 }
 .timeline .timeline-content .left .text{
+    transition: all 0.3s ease;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .timeline .timeline-content .left p{
+    transition: all 0.3s ease;
     text-align: justify;
 }
 .timeline .timeline-content .left a{
     display: inline-block;
-    background: #204B66;
+    background: #204B66; 
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -804,29 +809,35 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .timeline .timeline-content .left a:hover{
+    transition: all 0.3s ease;
     color: #204B66;
     background: none;
 }
 .timeline .timeline-content .right .bars{
+    transition: all 0.3s ease;
     margin-bottom: 15px;
 }
 .timeline .timeline-content .right .info{
+    transition: all 0.3s ease;
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
 .timeline .timeline-content .right span{
+    transition: all 0.3s ease;
     font-weight: 500;
     font-size: 18px;
 }
 .timeline .timeline-content .right .line{
+    transition: all 0.3s ease;
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
 .timeline .timeline-content .right .line::before{
+    transition: all 0.3s ease;
     position: absolute;
     height: 100%;
     left: 0;
@@ -834,22 +845,27 @@ section .title::after{
     background: #204B66;
 }
 .timeline .timeline-content .html::before{
+    transition: all 0.3s ease;
     width: 90%;
     content: ""
 }
 .timeline .timeline-content .css::before{
+    transition: all 0.3s ease;
     width: 60%;
     content: "..."
 }
 .timeline .timeline-content .js::before{
+    transition: all 0.3s ease;
     width: 80%;
     content: ""
 }
 .timeline .timeline-content .php::before{
+    transition: all 0.3s ease;
     width: 50%;
     content: "..."
 }
 .timeline .timeline-content .mysql::before{
+    transition: all 0.3s ease;
     width: 70%;
     content: ""
 }
@@ -860,6 +876,7 @@ section .title::after{
   }
   
 .timeline .timeline-content {
+    transition: all 0.3s ease;
     max-width: 400px;
     margin: 0 auto;
   }
@@ -915,6 +932,7 @@ section .title::after{
   }
   
   .timeline .timeline-content {
+    transition: all 0.3s ease;
     /*margin-left: 40px;*/
     padding: 20px;
     background-color: #fff;
@@ -923,10 +941,12 @@ section .title::after{
   }
 
   .timeline .timeline-content .gauche {
+    transition: all 0.3s ease;
    margin-left: 40px;
   }
 
   .timeline .timeline-content .droite {
+    transition: all 0.3s ease;
     margin-left: 80px;
   }
 
@@ -952,6 +972,7 @@ section .title::after{
     
 }
 .timeline .timeline-content a:hover{
+    transition: all 0.3s ease;
     color: #204B66;
     background: none;
 }
