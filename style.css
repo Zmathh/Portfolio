@@ -12,60 +12,58 @@ html{
     font-size: 16px;
 }
 
-/* custom scroll bar */
+/* Custom scrollbar for WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
     width: 10px;
-    height:10px;
+    height: 10px;
 }
-::-webkit-scrollbar {
-    width: 10px;
-}
+
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: transparent;
+    border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background-color: #888;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #204B66;
+    background-color: #204B66;
 }
-/* Firefox */
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #4a6d83;
+}
+
+/* Custom scrollbar for Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #204B66 #DFE9EB;
-  }
-  
-  /* Chrome, Edge and Safari */
-  *::-webkit-scrollbar {
-    width: 10px;
-    width: 10px;
-  }
-  *::-webkit-scrollbar-track {
-    border-radius: 5px;
+    scrollbar-color: #204B66 transparent;
+}
+
+/* Additional styles for consistency across browsers */
+*::-webkit-scrollbar-track:hover {
     background-color: transparent;
-  }
-  
-  *::-webkit-scrollbar-track:hover {
-    background-color: transparent;
-  }
-  
-  *::-webkit-scrollbar-track:active {
+}
+
+*::-webkit-scrollbar-track:active {
     background-color: #B8C0C2;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: #053452;
-  }
-  
-  *::-webkit-scrollbar-thumb:hover {
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
     background-color: #204B66;
-  }
-  
-  *::-webkit-scrollbar-thumb:active {
+}
+
+*::-webkit-scrollbar-thumb:active {
     background-color: #4a6d83;
-  }
+}
+
   
 .visible {
     visibility: visible;
@@ -511,7 +509,7 @@ section .title::after{
     cursor: pointer;
     /* overflow: hidden; */
     height: 450px;
-    min-width: 49%;
+    min-width: 600px;
     transition: all 0.3s ease;
 
     box-sizing: border-box;
@@ -547,7 +545,7 @@ section .title::after{
     cursor: pointer;
     /* overflow: hidden; */
     height: 450px;
-    min-width: 49%;
+    min-width: 600px;
     transition: all 0.3s ease;
 
     box-sizing: border-box;
@@ -583,7 +581,7 @@ section .title::after{
     padding: 20px;
     cursor: pointer;
     height: 450px;
-    min-width: 49%;
+    min-width: 600px;
     transition: all 0.3s ease;
     box-sizing: border-box;
     flex: 100 1 100%;
@@ -663,6 +661,7 @@ section .title::after{
 /* hover */
 
 .ProjetSAE .saecontent .sae-gbf-portable.hoversae {
+    text-shadow: 1px 1px 40px black;
     background: #222 center / cover no-repeat url("images/projets/1er_annee/gbf-portable.png");
     }
 .ProjetSAE .saecontent .sae-alimentation-stabilisee.hoversae {
@@ -716,8 +715,9 @@ section .title::after{
   
 
 .ProjetSAE .saecontent .card:hover {
-    /* shadow: 1px 1px 40px black; */
+    
     background-color: #204B66;
+    
 
     transform: scale(1.05);
 }
@@ -763,19 +763,17 @@ section .title::after{
 
 
 
-.ProjetSAE .saecontent.list-mode2 .card {
-
-  }
 
 .ProjetSAE .saecontent .hoversae {
+    text-shadow: 1px 1px 40px black;
     background: #222 center / contain no-repeat;
     margin: 10px;
-    text-align: left;
+    text-align: center;
     border-radius: 6px;
     padding: 20px;
     cursor: pointer;
     height: 450px;
-    min-width: 49%;
+    min-width: 600px;
     transition: all 0.3s ease;
     box-sizing: border-box;
     flex: 100 1 100%;
@@ -801,6 +799,7 @@ section .title::after{
 }
 
 .ProjetSAE .saecontent .card:hover .text {
+    text-shadow: 1px 1px 40px black;
     color: white;
     transition: color 0.3s ease;
 }
@@ -812,6 +811,7 @@ section .title::after{
 }
 
 .ProjetSAE .saecontent .card:hover i {
+    text-shadow: 1px 1px 40px black;
     color: #fff;
 }
 
