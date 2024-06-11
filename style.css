@@ -491,7 +491,7 @@ section .title::after{
     /* overflow: hidden; */
     height: 150px;
     /* min-width: 49%; */
-    min-width: 250px;
+    min-width: 342px;
     transition: all 0.3s ease;
 
     box-sizing: border-box;
@@ -575,10 +575,6 @@ section .title::after{
     transition: all 0.3s ease;
   }
 
-
-
-
-  
   .ProjetSAE .saecontent.list-mode2 .card {
     background: #222 center / contain no-repeat;
     margin: 10px;
@@ -593,6 +589,25 @@ section .title::after{
     flex: 100 1 100%;
     background-image: attr(data-bg url);
   }
+  .ProjetSAE .saecontent.full-view-mode2 .card {
+    background: #222;
+    /* flex: 0 0 calc(10% - 10px); */
+    margin: 10px;
+    box-sizing: border-box;
+
+    /* text-align: center; */
+    border-radius: 6px;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    background:hidden;
+    /* min-height: 60%; */
+    /* max-height: 10%; */
+    max-width: 80%;
+    /* min-width: 45%;
+    max-width: 45%; */
+    transition: all 0.3s ease;
+  }
   
 .ProjetSAE .saecontent.list-mode .sae-gbf-portable {
     background: #222 center / cover no-repeat url("images/projets/1er_annee/gbf-portable.png");
@@ -600,7 +615,7 @@ section .title::after{
 .ProjetSAE .saecontent.list-mode .sae-alimentation-stabilisee {
     background: #222 center / cover no-repeat url("images/projets/1er_annee/alim-stabilisee.png");
 }
-.ProjetSAE .saecontent.list-mode .sae-voltmètre {
+.ProjetSAE .saecontent.list-mode .sae-voltmetre {
     background: #222 center / cover no-repeat url("images/projets/1er_annee/voltmetre.jpg");
 }
 .ProjetSAE .saecontent.list-mode .sae-radar-de-recul {
@@ -644,29 +659,68 @@ section .title::after{
 .ProjetSAE .saecontent.list-mode2 .stage2 {
     background: #222 center / cover no-repeat url("images/projets/3eme_annee/cxr.jpg");
 }
+
+/* hover */
+
+.ProjetSAE .saecontent .sae-gbf-portable.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/gbf-portable.png");
+    }
+.ProjetSAE .saecontent .sae-alimentation-stabilisee.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/alim-stabilisee.png");
+}
+.ProjetSAE .saecontent .sae-voltmetre.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/voltmetre.jpg");
+}
+.ProjetSAE .saecontent .sae-radar-de-recul.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/radar-de-recul.jpg");
+}
+.ProjetSAE .saecontent .sae-mesure-de-l-energie.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/mesure-de-l-energie.jpg");
+}
+.ProjetSAE .saecontent .sae-ampli-audio-3-voix.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/1er_annee/ampli-3-voix.png");
+}
+
+.ProjetSAE .saecontent .sae-station-meteo.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/station-meteo.png");
+}
+.ProjetSAE .saecontent .sae-cna.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/cna.jpg");
+}
+.ProjetSAE .saecontent .sae-can.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/can.jpg");
+}
+.ProjetSAE .saecontent .sae-labview.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/labview.jpg");
+}
+.ProjetSAE .saecontent .sae-emetteur-recepteur-hf.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/emetteur-recepteur-hf.JPEG");
+}
+.ProjetSAE .saecontent .stage1.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/2eme_annee/cxr.jpg");
+}
+
+.ProjetSAE .saecontent .sae-recherche.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/3eme_annee/initialisation-a-la-recherche.jpg");
+}
+.ProjetSAE .saecontent .sae-iot.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/3eme_annee/iot.png");
+}
+.ProjetSAE .saecontent .sae-kart.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/3eme_annee/kart.jpg");
+}
+.ProjetSAE .saecontent .stage2.hoversae {
+    background: #222 center / cover no-repeat url("images/projets/3eme_annee/cxr.jpg");
+}
   
   
 
-  .ProjetSAE .saecontent.full-view-mode2 .card {
-    background: #222;
-    /* flex: 0 0 calc(10% - 10px); */
-    margin: 10px;
-    box-sizing: border-box;
+.ProjetSAE .saecontent .card:hover {
+    /* shadow: 1px 1px 40px black; */
+    background-color: #204B66;
 
-    /* text-align: center; */
-    border-radius: 6px;
-    padding: 20px;
-    cursor: pointer;
-    overflow: hidden;
-    background:hidden;
-    /* min-height: 60%; */
-    /* max-height: 10%; */
-    max-width: 80%;
-    /* min-width: 45%;
-    max-width: 45%; */
-    transition: all 0.3s ease;
-  }
-
+    transform: scale(1.05);
+}
 
 .ProjetSAE .descSAE {
     font-size: 2vw;  /*font descsae */
@@ -709,13 +763,23 @@ section .title::after{
 
 
 
+.ProjetSAE .saecontent.list-mode2 .card {
 
+  }
 
-.ProjetSAE .saecontent .card:hover {
-    /* shadow: 1px 1px 40px black; */
-    background-color: #204B66;
-
-    transform: scale(1.05);
+.ProjetSAE .saecontent .hoversae {
+    background: #222 center / contain no-repeat;
+    margin: 10px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 20px;
+    cursor: pointer;
+    height: 450px;
+    min-width: 49%;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    flex: 100 1 100%;
+    background-image: attr(data-bg url);
 }
 
 .ProjetSAE .saecontent .card .box {
@@ -1062,7 +1126,7 @@ section .title::after{
     justify-content: center;
     transition: all 0.3s ease;
 }
-.projetsplus .carousel .card:hover .box{
+.projetsplus .carousel .card:hover{
     transform: scale(1.05);
 }
 .projetsplus .carousel .card .text{
@@ -1104,6 +1168,7 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: #204B66!important;
+    
 }
 
 /* contact section styling */
@@ -1202,6 +1267,9 @@ section .title::after{
 .right form .button-area button:hover{
   color: #204B66;
   background: none;
+
+  
+
 }
 /* footer section styling */
 footer{

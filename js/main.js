@@ -305,6 +305,32 @@ function removeBackgroundImages2() {
 }
 
 
+// hover
+
+
+$(document).ready(function() {
+  let hoverTimer;
+
+  const hoverHandler = function() {
+    const $this = $(this);
+
+    hoverTimer = setTimeout(function() {
+      $this.addClass('hoversae');
+    }, 500); // .5 seconds delay
+  };
+
+  const leaveHandler = function() {
+    clearTimeout(hoverTimer);
+    $(this).removeClass('hoversae');
+  };
+
+  $('.sae-gbf-portable, .sae-alimentation-stabilisee, .sae-voltmetre, .sae-radar-de-recul, .sae-mesure-de-l-energie, .sae-ampli-audio-3-voix, .sae-station-meteo, .sae-cna, .sae-can, .sae-labview, .sae-emetteur-recepteur-hf, .stage1, .sae-recherche, .sae-iot, .sae-kart, .stage2')
+    .hover(hoverHandler, leaveHandler);
+});
+
+
+
+
 ///////
 
 
